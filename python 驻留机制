@@ -1,0 +1,13 @@
+>>> a="aa_11"
+>>> b="aa_11"
+>>> a is b
+True
+>>> a==b
+True
+>>> c="aa#"
+>>> d="aa#"
+>>> c is d
+False
+>>> c==d
+True
+>>> 
