@@ -1,0 +1,19 @@
+import turtle
+
+t=turtle.Pen()
+
+t.speed(0)
+
+for x in range(10):
+    t.penup()
+    t.goto(-300,300-x*30)
+    t.pendown()
+    t.goto(270,300-x*30)
+
+for i in range(20):
+    t.penup()
+    t.goto(-300+i*30,300)
+    t.pendown()
+    t.goto(-300+i*30,30)
+
+turtle.done()
