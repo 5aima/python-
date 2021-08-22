@@ -1,0 +1,25 @@
+my_text="i love python i love chenxinhai too"
+
+this_count={c:my_text.count(c) for c in my_text}
+
+print(this_count)
+
+#画同心圆
+
+import turtle
+
+t=turtle.Pen()
+
+my_corle=("red","green","yellow","blue","black")
+t.width(4)
+t.speed(0)
+
+for x in range(20):
+    t.penup()
+    t.goto(0,-x*20)
+    t.pendown()
+    t.color(my_corle[x%len(my_corle)])
+    t.circle(50+x*20)
+
+
+turtle.done()  #执行完窗口还在
