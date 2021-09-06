@@ -1,0 +1,22 @@
+#测试继承
+class Person:
+
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def say_age(self):
+        print("not know age!!!")
+
+
+class Student(Person):
+
+    def __init__(self,name,age,score):
+        Person.__init__(self,name,age)
+        self.score=score
+
+print(Student.mro())#继承关系
+
+s=Student("chen",21,90)
+s.say_age()
+print(s.name)
